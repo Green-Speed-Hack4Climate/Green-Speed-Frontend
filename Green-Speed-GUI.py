@@ -17,7 +17,7 @@ root = tk.Tk()
 root.title("Green Speed")
 
 # Load the logo image
-logo_image = PhotoImage(file="C:\\Users\\PC\\Desktop\\Green Speed\\Green Speed - White Bg.png")  # Replace "logo.png" with the path to your PNG logo
+logo_image = PhotoImage(file="Green Speed - White Bg.png")  # Replace "logo.png" with the path to your PNG logo
 
 # Create and pack the logo image
 logo_label = tk.Label(root, image=logo_image)
