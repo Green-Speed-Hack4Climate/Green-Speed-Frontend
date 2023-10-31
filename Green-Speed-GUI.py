@@ -7,7 +7,7 @@ def submit():
     input2 = entry2.get()
     input3 = entry3.get()
 
-    # You can process the input data as needed
+    # Process the input data as needed
     print("Input 1:", input1)
     print("Input 2:", input2)
     print("Input 3:", input3)
