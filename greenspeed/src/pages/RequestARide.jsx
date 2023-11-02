@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../context/AuthContext";
 
 function RequestARide() {
+  const { requestTransport } = useContext(AuthContext);
+
+  const [time, setTime] = useState();
+  const [currentLocation, setCurrentLocation] = useState();
+  const [destination, setDestination] = useState();
+  const [modeOfTransport, setmodeOfTrasport] = useState();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    requestTransport(time, currentLocation, destination, modeOfTransport);
+   
+  };
+
   return (
     <div className="relative h-screen overflow-hidden">
       <video
@@ -30,7 +44,8 @@ function RequestARide() {
                 Welcome to GreenSpeed
               </h2>
               <p className="max-w-xl mb-4 text-base text-yellow-400 md:text-lg">
-                Request for transport in the fastest and most efficient climate friendly way!
+                Request for transport in the fastest and most efficient climate
+                friendly way!
               </p>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
@@ -38,7 +53,7 @@ function RequestARide() {
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                   Request For Transport
                 </h3>
-                <form className="h-full flex flex-col">
+                <form className="h-full flex flex-col" onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label
                       htmlFor="time"
@@ -52,7 +67,7 @@ function RequestARide() {
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                       id="time"
                       name="time"
-                      
+                      onChange={(e)=> setTime(e.target.value)} 
                     />
                   </div>
                   <div className="mb-4">
@@ -63,13 +78,13 @@ function RequestARide() {
                       Current Location
                     </label>
                     <input
-                    placeholder='Enter Your Current Location'
+                      placeholder="Enter Your Current Location"
                       required
                       type="text"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="currentlocation"
-                      name="currentlocation"
-                      
+                      id="currentLocation"
+                      name="currentLocation"
+                      onChange={(e)=> setCurrentLocation(e.target.value)} 
                     />
                   </div>
                   <div className="mb-4">
@@ -80,13 +95,13 @@ function RequestARide() {
                       Destination
                     </label>
                     <input
-                    placeholder='Enter your Destination'
+                      placeholder="Enter your Destination"
                       required
                       type="text"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                       id="destination"
                       name="destination"
-                      
+                      onChange={(e)=> setDestination(e.target.value)} 
                     />
                   </div>
 
@@ -98,13 +113,13 @@ function RequestARide() {
                       Preferred Mode Of Transport (if any)
                     </label>
                     <input
-                    placeholder='Enter any preferred means of transport'
+                      placeholder="Enter any preferred means of transport"
                       required
                       type="text"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="modeoftransport"
-                      name="modeoftransport"
-                    
+                      id="modeOfTransport"
+                      name="modeOfTransport"
+                      onChange={(e)=> setmodeOfTrasport(e.target.value)} 
                     />
                   </div>
                   <div className="mt-4 mb-2 sm:mb-4">
@@ -122,7 +137,7 @@ function RequestARide() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default RequestARide
+export default RequestARide;
