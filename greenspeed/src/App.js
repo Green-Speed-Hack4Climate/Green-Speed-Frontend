@@ -4,11 +4,13 @@ import HomePage from "./pages/HomePage";
 import RequestARide from "./pages/RequestARide";
 import ContactUs from "./pages/ContactUs";
 import Details from "./pages/Details";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <div className="App">
     <BrowserRouter >
+    <AuthProvider>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />}/>
@@ -18,6 +20,7 @@ function App() {
 
       </Route>
     </Routes>
+    </AuthProvider>
     </BrowserRouter>
     </div>
   );
