@@ -93,7 +93,7 @@ function HomePage() {
               <h3 class="mb-2 text-xl font-bold text-green-700 dark:text-white">
                 Sustainable
               </h3>
-              <p class="text-gray-500 dark:text-gray-400">
+              <p class="font-bold dark:text-gray-400">
                 Greenspan is a comprehensive tool that provides users with
                 everything they need to plan sustainable trips, including
                 real-time traffic information, public transportation schedules,
@@ -115,7 +115,7 @@ function HomePage() {
               <h3 class="mb-2 text-xl font-bold dark:text-white text-green-700">
                 Easy To Use
               </h3>
-              <p class="text-gray-500 dark:text-gray-400">
+              <p class="font-bold dark:text-gray-400">
                 Greenspan is easy to use and navigate, even for users who are
                 not familiar with transportation planning.
               </p>
@@ -139,7 +139,7 @@ function HomePage() {
               <h3 class="mb-2 text-xl font-bold dark:text-white text-green-700">
                 Environment Friendly
               </h3>
-              <p class="text-gray-500 dark:text-gray-400">
+              <p class="font-bold dark:text-gray-400">
                 Greenspan is committed to sustainability and helping users
                 reduce their environmental impact.
               </p>
