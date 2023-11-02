@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
 export const AuthContext = createContext();
