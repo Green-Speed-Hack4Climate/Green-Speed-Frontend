@@ -1,10 +1,8 @@
 import { createContext, useState } from "react";
-import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
 export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const nav = useNavigate();
   const [onChange, setonChange] = useState(false);
 
   const requestTransport = (
@@ -29,7 +27,6 @@ export function AuthProvider({ children }) {
         if (response.error) {
           Swal.fire("Error", response.error, "error");
         } else if (response.success) {
-          nav("/resources");
           Swal.fire("Success", response.success, "success");
           setonChange(!onChange);
         } else {
