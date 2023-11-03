@@ -9,7 +9,7 @@ function HowItWorks() {
             How It Works
           </h2>
           <p class="mb-5 font-light text-yellow-400 sm:text-xl dark:text-gray-400">
-            Here is a breakdown of how Greenspan works, from a person filling in
+            Here is a breakdown of how GreenSpeed works, from a person filling in
             the form to requesting for transportation to getting the feedback:
           </p>
         </div>
@@ -17,7 +17,7 @@ function HowItWorks() {
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <h3 class="mb-4 text-2xl font-semibold">1. Filling in the form</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Open the Greenspan app and fills in the following information:
+              Open the GreenSpeed app and fills in the following information:
             </p>
             <div class="flex justify-center items-baseline my-8"></div>
 
@@ -100,8 +100,8 @@ function HowItWorks() {
               button.This information is then processed for feedback.
             </p>
             <div class="flex justify-center items-baseline my-8">
-              Greenspan analyzes the traffic data and suggests the best mode of
-              transportation for the user's route and time of day. Greenspan
+              GreenSpeed analyzes the traffic data and suggests the best mode of
+              transportation for the user's route and time of day. GreenSpeed
               also estimates the travel time and emissions for each mode of
               transportation.
             </div>
@@ -119,7 +119,7 @@ function HowItWorks() {
               3. Feedback
             </h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            Greenspan provides the user with the following feedback:
+            GreenSpeed provides the user with the following feedback:
             </p>
             <div class="flex justify-center items-baseline my-8">
               

@@ -22,7 +22,7 @@ function HomePage() {
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 dark:bg-gray-900 bg-opacity-80">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl font-light font-sans text-yellow-400 tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-              Making Every Mile A Green Mile
+              Making Every Mile Green
             </h1>
             <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Greenspeed is a powerful and versatile tool that can help users of
@@ -94,7 +94,7 @@ function HomePage() {
                 Sustainable
               </h3>
               <p class="font-bold dark:text-gray-400">
-                Greenspan is a comprehensive tool that provides users with
+               Greenspeed is a comprehensive tool that provides users with
                 everything they need to plan sustainable trips, including
                 real-time traffic information, public transportation schedules,
                 walking and cycling directions, and estimated travel times and
@@ -116,7 +116,7 @@ function HomePage() {
                 Easy To Use
               </h3>
               <p class="font-bold dark:text-gray-400">
-                Greenspan is easy to use and navigate, even for users who are
+               Greenspeed is easy to use and navigate, even for users who are
                 not familiar with transportation planning.
               </p>
             </div>
@@ -140,7 +140,7 @@ function HomePage() {
                 Environment Friendly
               </h3>
               <p class="font-bold dark:text-gray-400">
-                Greenspan is committed to sustainability and helping users
+               Greenspeed is committed to sustainability and helping users
                 reduce their environmental impact.
               </p>
             </div>
