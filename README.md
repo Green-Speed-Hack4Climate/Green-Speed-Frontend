@@ -3,6 +3,8 @@ Find the documentation of our project here: https://docs.google.com/document/d/1
 
 Organisation Link: https://github.com/Green-Speed-Hack4Climate
 
+Video submission: https://drive.google.com/file/d/1WW1C97JnQcXDTbDSSJOOUC4_bBo71Lui/view?usp=drive_link
+
 
 
 
